@@ -5,7 +5,7 @@ interface link {
 
 export type Category = "general" | "js" | "react" | "ts" | "HTML/CSS" | "git";
 
-export interface Answer {
+export interface IAnswer {
   id: string;
   category: Category;
   title: string;
@@ -15,6 +15,12 @@ export interface Answer {
   links: link[];
 }
 
-export interface Task extends Omit<Answer, "links" | "image"> {
+export interface ITask extends Omit<IAnswer, "links" | "image"> {
   codepenUrl: string;
+}
+
+export interface IAnswers {
+  title: string;
+  name: string;
+  items: IAnswer[] | ITask[];
 }

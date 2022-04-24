@@ -1,6 +1,6 @@
-import { Task } from "../../interfaces/interfaces";
+import { ITask } from "../../interfaces/interfaces";
 
-export const jsTasks: Task[] = [
+export const jsTasks: ITask[] = [
   {
     id: "1",
     category: "js",

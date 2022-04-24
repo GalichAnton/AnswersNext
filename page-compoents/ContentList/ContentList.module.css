@@ -1,0 +1,48 @@
+.wrapper{
+  height: 100%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin: 0 auto;
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  justify-items: start;
+}
+
+.item{
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.category{
+  color: #071838FF;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0  0 10px 0;
+
+}
+
+.answers{
+  position: absolute;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 350px;
+  overflow-y: auto;
+  min-width: 400px;
+}
+.answers li{
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.mainTitle{
+  color: white;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+

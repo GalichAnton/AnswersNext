@@ -1,24 +1,26 @@
-.layout{
+.layout {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
   min-height: 100vh;
   grid-template-areas:
-		"header"
-		"body"
-		"footer";
+    "header"
+    "body"
+    "footer";
 }
+
 .header {
   grid-area: header;
 }
 
-
-
 .body {
   grid-area: body;
-
+  align-self: flex-start;
   outline: none;
 }
 
 .footer {
   grid-area: footer;
+  align-self: flex-end;
 }

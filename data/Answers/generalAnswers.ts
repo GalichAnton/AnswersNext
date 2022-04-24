@@ -1,6 +1,6 @@
-import { Answer } from "../../interfaces/interfaces";
+import { IAnswer } from "../../interfaces/interfaces";
 
-export const generalAnswers: Answer[] = [
+export const generalAnswers: IAnswer[] = [
   {
     id: "1",
     category: "general",
