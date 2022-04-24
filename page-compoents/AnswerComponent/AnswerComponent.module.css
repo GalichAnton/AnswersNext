@@ -1,50 +1,67 @@
-.answers{
-  display: flex;
+.answers {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "sidebar answer";
   overflow: auto;
-  height: 100%;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+
+  height: 100%;
 }
 
-.sideBar{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 20%;
-  align-items: center;
-}
 
-.answerList{
-  list-style-type: none;
+.sideBar {
+  grid-area: sidebar;
+}
+.answer {
+  grid-area: answer;
+}
+.answerList {
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
-.categoryTitle{
+.categoryTitle {
   color: white;
+
   font-size: 32px;
   font-weight: 500;
 }
 
-.link{
-  color: white;
+.link {
   text-decoration: none;
+
+  color: white;
+
   font-size: 18px;
   font-weight: 500;
 }
 
-.activeLink{
-  color: #2c3e50;
+.activeLink {
+  color: #2C3E50;
 }
 
-.button{
+.button {
   padding: 5px;
-  border: none;
-  border-radius: 6px;
-  color: blue;
-  background: greenyellow;
+
   cursor: pointer;
 
+  color: blue;
+  border: none;
+  border-radius: 6px;
+  background: greenyellow;
+}
+
+@media screen and (max-width: 1024px) {
+  .answers{
+    grid-template-columns: 1fr;
+    grid-template-areas: "answer"
+  }
+  .sideBar {
+    display: none;
+  }
 }
 

@@ -40,5 +40,6 @@ export const getStaticProps: GetStaticProps<TasksPageProps> = async ({
 }: GetStaticPropsContext<ParsedUrlQuery>) => {
   return {
     props: { tasks: Tasks },
+    revalidate: 60,
   };
 };

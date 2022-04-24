@@ -1,0 +1,27 @@
+.sideList{
+  align-content: start;
+  padding: 20px;
+  border-right: 1px solid #071838FF;
+  height: 100%;
+}
+
+.title{
+  color: white;
+  margin-bottom: 40px;
+}
+.list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #071838FF;
+  font-size: 1rem;
+}
+
+.link {
+   transition: opacity .7s ease-in-out;
+}
+
+.link :hover{
+  transition: opacity .3s ease-in-out;
+  opacity: 0.5;
+}

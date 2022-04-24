@@ -1,55 +1,79 @@
-.answer{
+.answer {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  width: 90%;
+
+  padding: 20px;
 }
 
-.title{
-  font-size: 32px;
+.title {
   color: white;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
-.infoBox{
-  width: 100%;
+.infoBox {
   display: flex;
   justify-content: space-between;
-}
-.imgBox{
-  width: 48%;
-}
-.imgBox img{
 
-  height: 100%;
   width: 100%;
-  object-fit: contain;
-
 }
 
-.descr{
+.imgBox {
+  width: clamp(320px,70%, 600px);
+}
+
+
+
+.descr {
   color: white;
-  font-size: 20px;
+
+  font-size: 16px
 }
 
-.links{
+.links {
+  display: flex;
+  align-items: center;
+
   margin: 0;
   padding: 0;
+
   color: white;
+
   font-size: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .link {
-  text-decoration: none;
-  color: lawngreen;
   padding: 5px;
+
+  text-decoration: none;
+
+  color: lawngreen;
 }
 
-.iframeBox{
-  width: 48%;
-  height: 400px;
+.iframeBox {
+  width: clamp(320px,70%, 600px);
 }
 
+@media screen and (max-width: 700px) {
+  .infoBox{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .iframeBox{
+    min-height: 300px;
+  }
+  .imgBox{
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 20px;
+  }
+}

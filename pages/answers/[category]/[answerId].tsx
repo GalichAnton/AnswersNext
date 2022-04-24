@@ -44,5 +44,6 @@ export const getStaticProps: GetStaticProps<AnswerPageProps> = async ({
   const answers = Answers;
   return {
     props: { answers },
+    revalidate: 60,
   };
 };
