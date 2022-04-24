@@ -8,8 +8,10 @@
 }
 
 .title {
-  color: white;
   margin-bottom: 40px;
+
+  color: white;
+
   font-size: 32px;
 }
 
@@ -21,15 +23,13 @@
 }
 
 .imgBox {
-  width: clamp(320px,70%, 600px);
+  width: clamp(320px, 70%, 600px);
 }
-
-
 
 .descr {
   color: white;
 
-  font-size: 16px
+  font-size: 16px;
 }
 
 .links {
@@ -53,25 +53,29 @@
 }
 
 .iframeBox {
-  width: clamp(320px,70%, 600px);
+  width: clamp(320px, 70%, 600px);
 }
 
 @media screen and (max-width: 700px) {
-  .infoBox{
-    flex-direction: column;
+  .infoBox {
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
   }
-  .iframeBox{
+
+  .iframeBox {
     min-height: 300px;
   }
-  .imgBox{
+
+  .imgBox {
     margin-bottom: 10px;
   }
+
   .title {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .title {
     font-size: 20px;

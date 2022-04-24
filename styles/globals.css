@@ -22,9 +22,11 @@ a {
 
   color: inherit;
 }
-h2{
+
+h2 {
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -46,4 +48,19 @@ h2{
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #A8BBBF;
+}
+
+:root {
+  --black: #3B434E;
+  --gray-light: #EBEBEB;
+  --gray: #A4A4A4;
+  --gray-dark: #6C7077;
+  --white: white;
+  --primary: #7351F5;
+  --primary-hover: #6344DF;
+  --red-light: #FEA291;
+  --red: #FC836D;
+  --green: #007B48;
+  --green-light: #C8F8E4;
+  --font-family: "Noto Sans KR", sans-serif;
 }

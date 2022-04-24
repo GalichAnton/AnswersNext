@@ -2,21 +2,25 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "sidebar answer";
+
   overflow: auto;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 
   height: 100%;
+  position: relative;
 }
-
 
 .sideBar {
   grid-area: sidebar;
+  border-right: 1px solid #071838FF;
 }
+
 .answer {
   grid-area: answer;
 }
+
 .answerList {
   margin: 0;
   padding: 0;
@@ -55,13 +59,50 @@
   background: greenyellow;
 }
 
-@media screen and (max-width: 1024px) {
-  .answers{
-    grid-template-columns: 1fr;
-    grid-template-areas: "answer"
-  }
-  .sideBar {
-    display: none;
-  }
+/*@media screen and (max-width: 1024px) {*/
+/*  .answers {*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-areas: "answer";*/
+/*  }*/
+
+/*}*/
+.burger{
+  display: none;
+}
+.mobileMenu{
+  height: 100%;
 }
 
+.menuClose {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 15px;
+  right: 15px;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+  .menuClose{
+    display: block;
+  }
+  .sideBar{
+    border: none;
+  }
+  .mobileMenu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    padding: 20px 10px;
+
+    background: rgba(207, 208, 217, 0.94);
+  }
+}

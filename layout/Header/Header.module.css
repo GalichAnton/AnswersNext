@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- padding: 0 20%;
+
   width: 100%;
   height: 70px;
+  padding: 0 20%;
 
   background: linear-gradient(to right, #3E5151, #DECBA4);
 }
@@ -16,24 +17,27 @@
   font-weight: 500;
 }
 
-.link{
-  color: white;
-  opacity: 1;
-  font-size: 30px;
-  font-weight: 500;
+.link {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  opacity: 1;
+  color: white;
+
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .link:hover {
   opacity: 0.5;
 }
-@media screen and (max-width: 1024px) {
 
+@media screen and (max-width: 1024px) {
   .link {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .link {
     font-size: 20px;
