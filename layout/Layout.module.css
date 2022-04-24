@@ -1,0 +1,24 @@
+.layout{
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  grid-template-areas:
+		"header"
+		"body"
+		"footer";
+}
+.header {
+  grid-area: header;
+}
+
+
+
+.body {
+  grid-area: body;
+
+  outline: none;
+}
+
+.footer {
+  grid-area: footer;
+}
