@@ -22,5 +22,10 @@ export interface ITask extends Omit<IAnswer, "links" | "image"> {
 export interface IAnswers {
   title: string;
   name: string;
-  items: IAnswer[] | ITask[];
+  items: IAnswer[];
+}
+export interface ITasks {
+  title: string;
+  name: string;
+  items: ITask[];
 }

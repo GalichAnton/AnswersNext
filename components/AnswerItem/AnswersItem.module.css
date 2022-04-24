@@ -1,0 +1,55 @@
+.answer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.title{
+  font-size: 32px;
+  color: white;
+}
+
+.infoBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.imgBox{
+  width: 48%;
+}
+.imgBox img{
+
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.descr{
+  color: white;
+  font-size: 20px;
+}
+
+.links{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: lawngreen;
+  padding: 5px;
+}
+
+.iframeBox{
+  width: 48%;
+  height: 400px;
+}
+

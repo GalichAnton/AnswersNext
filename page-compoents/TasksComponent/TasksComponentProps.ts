@@ -1,8 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { IAnswers, ITasks } from "../../interfaces/interfaces";
+import { ITasks } from "../../interfaces/interfaces";
 
-export interface ContentListProps
+export interface TasksComponentProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  answers: IAnswers[];
   tasks: ITasks[];
 }

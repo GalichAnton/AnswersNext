@@ -1,9 +1,11 @@
 .layout {
   display: grid;
+
+  min-height: 100vh;
+
+  background: linear-gradient(to right, #BDC3C7, #2C3E50);
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
-  min-height: 100vh;
   grid-template-areas:
     "header"
     "body"
@@ -16,11 +18,14 @@
 
 .body {
   grid-area: body;
+
   align-self: flex-start;
+
   outline: none;
 }
 
 .footer {
   grid-area: footer;
+
   align-self: flex-end;
 }

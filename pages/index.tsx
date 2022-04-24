@@ -1,10 +1,10 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import ContentList from "../page-compoents/ContentList/ContentList";
-import { IAnswers } from "../interfaces/interfaces";
-import { Answers } from "../data/Answers";
+import { IAnswers, ITasks } from "../interfaces/interfaces";
+import { Answers, Tasks } from "../data/Answers";
 
-const Home: NextPage<HomePageProps> = ({ answers }) => {
+const Home: NextPage<HomePageProps> = ({ answers, tasks }) => {
   return (
     <div>
       <Head>
@@ -18,11 +18,11 @@ const Home: NextPage<HomePageProps> = ({ answers }) => {
           property="og:image"
           content="https://avatars.mds.yandex.net/i?id=2a0000017a116945f9fc0c138668185665a1-4336923-images-thumbs&n=13"
         />
-        <meta property="og:title" content="Answers" />
+        <meta property="og:title" content="AnswerComponent" />
         <meta property="og:description" content="Interview answer aggregator" />
       </Head>
       <main>
-        <ContentList answers={answers} />
+        <ContentList answers={answers} tasks={tasks} />
       </main>
     </div>
   );
@@ -31,12 +31,12 @@ const Home: NextPage<HomePageProps> = ({ answers }) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const answers = Answers;
   return {
-    props: { answers },
+    props: { answers: Answers, tasks: Tasks },
   };
 };
 
 interface HomePageProps extends Record<string, unknown> {
   answers: IAnswers[];
+  tasks: ITasks[];
 }

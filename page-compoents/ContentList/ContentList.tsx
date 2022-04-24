@@ -4,8 +4,11 @@ import styles from "./ContentList.module.css";
 import { ContentListProps } from "./ContentListProps";
 import { motion } from "framer-motion";
 import useOutsideClick from "../../hooks/useOutsideClick";
-const ContentList = ({ answers, ...props }: ContentListProps) => {
-  const newAnswers = answers.map((answer) => ({ ...answer, isOpen: false }));
+const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
+  const newAnswers = [
+    ...answers.map((answer) => ({ ...answer, isOpen: false })),
+    ...tasks.map((task) => ({ ...task, isOpen: false })),
+  ];
   const [currentAnswers, setCurrentAnswers] = useState(newAnswers);
   const ref = useRef<HTMLUListElement | null>(null);
   const handleOpen = (title: string) => {
@@ -25,6 +28,7 @@ const ContentList = ({ answers, ...props }: ContentListProps) => {
   const variants = {
     visible: {
       height: "auto",
+      padding: 10,
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.05,
@@ -68,9 +72,9 @@ const ContentList = ({ answers, ...props }: ContentListProps) => {
                 >
                   <Link
                     href={
-                      category.title.includes("задачки")
-                        ? `tasks/${category.name}/${answer.id}`
-                        : `questions/${category.name}/${answer.id}`
+                      category.name.includes("task")
+                        ? `/tasks/${category.name}/${answer.id}`
+                        : `/answers/${category.name}/${answer.id}`
                     }
                   >
                     <a className={styles.item}>

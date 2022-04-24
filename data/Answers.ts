@@ -1,5 +1,5 @@
 import { generalAnswers } from "./Answers/generalAnswers";
-import { IAnswers } from "../interfaces/interfaces";
+import { IAnswers, ITasks } from "../interfaces/interfaces";
 import { jsAnswers } from "./Answers/jsAnswers";
 import { tsAnswers } from "./Answers/tsAnswers";
 import { reactAnswers } from "./Answers/reactAnswers";
@@ -33,6 +33,8 @@ export const Answers: IAnswers[] = [
     name: "git",
     items: gitAnswers,
   },
+];
+export const Tasks: ITasks[] = [
   {
     title: "JS задачки",
     name: "jstask",

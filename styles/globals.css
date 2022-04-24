@@ -26,6 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -35,12 +36,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
   border: 6px solid transparent;
+  border-radius: 20px;
+  background-color: #D6DEE1;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
+  background-color: #A8BBBF;
 }
