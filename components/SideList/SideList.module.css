@@ -33,9 +33,11 @@
 
   opacity: 0.5;
 }
-.activeLink{
+
+.activeLink {
   color: white;
 }
+
 @media screen and (max-width: 1024px) {
   .list {
     font-size: calc(0.9rem + 1vw);
