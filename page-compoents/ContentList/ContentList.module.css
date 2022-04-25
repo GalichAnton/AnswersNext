@@ -18,8 +18,8 @@
 .item {
   text-decoration: none;
 
-
   color: white;
+
   font-size: calc(0.5em + 0.5vw);
   font-weight: 500;
 }
@@ -39,10 +39,12 @@
   position: absolute;
 
   overflow-y: auto;
-  width: clamp(250px,40%, 400px);
+
+  width: clamp(250px, 40%, 400px);
   height: 0;
   max-height: 350px;
   padding: 0;
+
   border-radius: 5px;
   background: linear-gradient(to right, #BDC3C7, #2C3E50);
 }
@@ -61,14 +63,13 @@
   font-size: calc(1em + 2vw);
 }
 
-@media screen  and (max-width: 425px){
-  .wrapper{
+@media screen  and (max-width: 425px) {
+  .wrapper {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .answers{
+
+  .answers {
     left: 35px;
   }
 }
-
-

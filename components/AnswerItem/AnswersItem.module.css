@@ -63,7 +63,7 @@
 }
 
 .iframeBox {
-  width: clamp(310px, 90%, 600px);
+  width: clamp(310px, 90%, 700px);
   min-height: 300px;
 }
 

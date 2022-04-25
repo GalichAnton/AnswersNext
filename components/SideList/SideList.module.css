@@ -23,12 +23,14 @@
 }
 
 .link {
-  margin-bottom: 10px;
-  max-width: 300px;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+
+  max-width: 300px;
+  margin-bottom: 10px;
+
   transition: opacity 0.7s ease-in-out;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .link :hover {
@@ -45,7 +47,8 @@
   .list {
     font-size: calc(0.9rem + 1vw);
   }
-  .link{
+
+  .link {
     max-width: none;
   }
 }
