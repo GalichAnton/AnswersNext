@@ -4,8 +4,6 @@ import Head from "next/head";
 import { AnswerItemProps } from "./AnswerItemProps";
 import cn from "classnames";
 const AnswersItem = ({ answer, className, ...props }: AnswerItemProps) => {
-  const [src, setSrc] = useState(`${answer?.image}`);
-
   return (
     <>
       <Head>
@@ -19,7 +17,7 @@ const AnswersItem = ({ answer, className, ...props }: AnswerItemProps) => {
         <h2 className={styles.title}>{answer?.title}</h2>
         <div className={styles.infoBox}>
           <div className={styles.imgBox}>
-            <img src={src} alt="pic" onError={() => setSrc("/error.jpg")} />
+            <img src={answer?.image} alt="pic" />
           </div>
           <iframe
             className={styles.iframeBox}
