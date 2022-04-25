@@ -26,13 +26,14 @@
 
 .imgBox {
   width: clamp(310px, 90%, 600px);
-
 }
-.imgBox img{
+
+.imgBox img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
+
 .descr {
   margin: 0;
 
