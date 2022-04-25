@@ -5,24 +5,26 @@
 
   width: 100%;
   height: max(50px, 4vw);
-  padding: 0 20%;
+  padding: 0 10%;
 
   background: linear-gradient(to right, #3E5151, #DECBA4);
 }
 
 .title {
   color: white;
+  background: linear-gradient(#C31432, #240B36);
+  background-clip: text;
 
-  font-size: 30px;
+  font-size: calc(1em + 1vw);
   font-weight: 800;
-  background: -webkit-linear-gradient( #c31432, #240b36);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.interview{
-  font-family: "Beer money" ,sans-serif;
-  background: -webkit-linear-gradient( #c31432, #240b36);
-  -webkit-background-clip: text;
+
+.interview {
+  background: linear-gradient(#C31432, #240B36);
+  background-clip: text;
+
+  font-family: "Beer money", sans-serif;
   -webkit-text-fill-color: transparent;
 }
 
@@ -41,14 +43,9 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 1024px) {
-  .link {
-    font-size: 24px;
-  }
-}
 
-@media screen and (max-width: 425px) {
-  .link {
-    font-size: 20px;
+@media screen and (max-width: 768px) {
+  .title{
+    display: none;
   }
 }

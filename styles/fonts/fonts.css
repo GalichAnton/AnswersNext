@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Saytag-Regular";
-  font-style: normal;
+  font-family: Saytag-Regular;
   font-weight: 500;
+  font-style: normal;
   font-display: swap;
   src: url("./Saytag-Regular.ttf") format("ttf");
 }
