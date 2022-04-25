@@ -4,6 +4,7 @@ import styles from "./ContentList.module.css";
 import { ContentListProps } from "./ContentListProps";
 import { motion } from "framer-motion";
 import useOutsideClick from "../../hooks/useOutsideClick";
+import { translateAxis } from "framer-motion/types/projection/geometry/delta-apply";
 const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
   const newAnswers = [
     ...answers.map((answer) => ({ ...answer, isOpen: false })),
@@ -40,7 +41,9 @@ const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
   const variantsChildren = {
     visible: {
       opacity: 1,
-      height: 40,
+      height: 30,
+      paddingTop: 5,
+      paddingBot: 5,
     },
     hidden: { opacity: 0, height: 0 },
   };

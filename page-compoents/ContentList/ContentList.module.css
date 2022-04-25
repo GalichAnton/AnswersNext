@@ -13,14 +13,14 @@
   list-style-type: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  justify-items: center;
 }
 
 .item {
   text-decoration: none;
 
-  color: white;
 
+  color: white;
+  font-size: calc(0.5em + 0.5vw);
   font-weight: 500;
 }
 
@@ -39,12 +39,10 @@
   position: absolute;
 
   overflow-y: auto;
-
-  min-width: 400px;
+  width: clamp(250px,40%, 400px);
   height: 0;
   max-height: 350px;
   padding: 0;
-
   border-radius: 5px;
   background: linear-gradient(to right, #BDC3C7, #2C3E50);
 }
@@ -62,3 +60,15 @@
 
   font-size: calc(1em + 2vw);
 }
+
+@media screen  and (max-width: 425px){
+  .wrapper{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .answers{
+    left: 35px;
+  }
+}
+
+

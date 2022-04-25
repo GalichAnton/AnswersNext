@@ -24,7 +24,10 @@
 
 .link {
   margin-bottom: 10px;
-
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: opacity 0.7s ease-in-out;
 }
 
@@ -41,5 +44,8 @@
 @media screen and (max-width: 1024px) {
   .list {
     font-size: calc(0.9rem + 1vw);
+  }
+  .link{
+    max-width: none;
   }
 }

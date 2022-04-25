@@ -5,9 +5,14 @@ import { ButtonIcon } from "../ButtonIcon/ButtonIcon";
 import { motion } from "framer-motion";
 import SideList from "../SideList/SideList";
 import { useWindowSize } from "../../hooks/useWindowSize";
+import { useRouter } from "next/router";
 const SideBar = ({ answer, className }: SideBarProps) => {
-  const [isOpened, setIsOpened] = useState<boolean>(true);
+  const [isOpened, setIsOpened] = useState<boolean>(false);
   const { width } = useWindowSize();
+  const router = useRouter();
+  useEffect(() => {
+    setIsOpened(false);
+  }, [router]);
   useEffect(() => {
     if (width < 1120) {
       setIsOpened(false);
