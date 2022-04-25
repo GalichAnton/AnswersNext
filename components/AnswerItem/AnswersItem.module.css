@@ -5,6 +5,7 @@
   justify-content: space-between;
 
   padding: 20px;
+  height: 100%;
 }
 
 .title {
@@ -12,7 +13,7 @@
 
   color: white;
 
-  font-size: 32px;
+  font-size: calc(0.8em + 2vw);
 }
 
 .infoBox {
@@ -23,13 +24,13 @@
 }
 
 .imgBox {
-  width: clamp(320px, 70%, 600px);
+  width: clamp(310px, 70%, 600px);
 }
 
 .descr {
   color: white;
 
-  font-size: 16px;
+  font-size: calc(0.5em + 1vw);
 }
 
 .links {
@@ -41,7 +42,7 @@
 
   color: white;
 
-  font-size: 20px;
+  font-size: calc(0.7em + 1vw);
 }
 
 .link {
@@ -53,31 +54,28 @@
 }
 
 .iframeBox {
-  width: clamp(320px, 70%, 600px);
+  width: clamp(310px, 70%, 600px);
 }
 
 @media screen and (max-width: 700px) {
+  .answer{
+    padding: 10px;
+  }
   .infoBox {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .iframeBox {
-    min-height: 300px;
-  }
 
   .imgBox {
     margin-bottom: 10px;
   }
-
-  .title {
-    font-size: 24px;
+  .iframeBox {
+    margin-bottom: 10px;
   }
+
+
 }
 
-@media screen and (max-width: 425px) {
-  .title {
-    font-size: 20px;
-  }
-}
+

@@ -2,16 +2,17 @@
   position: relative;
 
   display: grid;
-
-  width: 50%;
-  height: 100%;
   margin: 0 auto;
+  width: clamp(300px, 70% , 900px);
+  height: 100%;
   padding: 0;
 
   list-style-type: none;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  justify-items: start;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 .item {
@@ -26,8 +27,7 @@
   margin: 0 0 10px;
 
   color: #071838FF;
-
-  font-size: 20px;
+  font-size: calc(0.7em + 1vw);
   font-weight: 700;
 }
 
@@ -55,6 +55,8 @@
   text-align: center;
 
   color: white;
-
-  font-family: Roboto, sans-serif;
+ font-size: calc(1em + 2vw);
 }
+
+
+

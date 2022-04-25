@@ -38,8 +38,7 @@ const AnswerComponent = ({ answers, ...props }: AnswerComponentProps) => {
   return (
     <div className={styles.answers} {...props}>
       <ButtonIcon
-        className={styles.burger}
-        appearance="white"
+        className={styles.arrow}
         icon="arrow"
         onClick={() => setIsOpened(true)}
       />
@@ -52,7 +51,6 @@ const AnswerComponent = ({ answers, ...props }: AnswerComponentProps) => {
         <SideList answer={currentAnswer} className={styles.sideBar} />
         <ButtonIcon
           className={styles.menuClose}
-          appearance="white"
           icon="close"
           onClick={() => setIsOpened(false)}
         />

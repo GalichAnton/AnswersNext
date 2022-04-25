@@ -18,5 +18,4 @@ export interface ButtonIconProps
     HTMLButtonElement
   > {
   icon: IconName;
-  appearance: "primary" | "white";
 }

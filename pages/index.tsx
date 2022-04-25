@@ -6,9 +6,19 @@ import { Answers, Tasks } from "../data/Answers";
 
 const Home: NextPage<HomePageProps> = ({ answers, tasks }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Подготовка</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={"true"}
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+          rel="stylesheet"
+        />
         <meta name="description" content="Interview answer aggregator" />
         <meta
           name="keywords"
@@ -24,7 +34,7 @@ const Home: NextPage<HomePageProps> = ({ answers, tasks }) => {
       <main>
         <ContentList answers={answers} tasks={tasks} />
       </main>
-    </div>
+    </>
   );
 };
 

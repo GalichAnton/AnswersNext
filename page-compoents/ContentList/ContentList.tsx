@@ -45,7 +45,7 @@ const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
     hidden: { opacity: 0, height: 0 },
   };
   return (
-    <div {...props}>
+    <div {...props} className={styles.contentList}>
       <h1 className={styles.mainTitle}>Содержание</h1>
       <ul className={styles.wrapper} ref={ref}>
         {currentAnswers.map((category, i) => (
