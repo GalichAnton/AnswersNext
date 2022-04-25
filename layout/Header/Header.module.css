@@ -35,7 +35,7 @@
   opacity: 1;
   color: white;
 
-  font-size: 30px;
+  font-size: calc(1em + 1vw);
   font-weight: 500;
 }
 
@@ -43,9 +43,8 @@
   opacity: 0.5;
 }
 
-
 @media screen and (max-width: 768px) {
-  .title{
+  .title {
     display: none;
   }
 }

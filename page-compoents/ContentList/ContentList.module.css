@@ -11,7 +11,7 @@
   padding: 0;
 
   list-style-type: none;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:  1fr 1fr 1fr;
   gap: 10px;
 }
 
@@ -23,7 +23,9 @@
   font-size: calc(0.5em + 0.5vw);
   font-weight: 500;
 }
-
+.categoryWrapper{
+  grid-area: category;
+}
 .category {
   margin: 0 0 10px;
 
@@ -33,6 +35,7 @@
 
   font-size: calc(0.7em + 1vw);
   font-weight: 700;
+
 }
 
 .answers {
@@ -47,6 +50,7 @@
 
   border-radius: 5px;
   background: linear-gradient(to right, #BDC3C7, #2C3E50);
+
 }
 
 .answers li {
