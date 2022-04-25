@@ -4,12 +4,8 @@ import classes from "../AnswerComponent/AnswerComponent.module.css";
 import TaskItem from "../../components/TaskItem/TaskItem";
 import { useRouter } from "next/router";
 import { TasksComponentProps } from "./TasksComponentProps";
-import Link from "next/link";
-import { ButtonIcon } from "../../components/ButtonIcon/ButtonIcon";
 import styles from "../AnswerComponent/AnswerComponent.module.css";
-import { motion } from "framer-motion";
-import SideList from "../../components/SideList/SideList";
-import { useWindowSize } from "../../hooks/useWindowSize";
+import SideBar from "../../components/SideBar/SideBar";
 const TasksComponent = ({ tasks }: TasksComponentProps) => {
   const [currentTask, setCurrentTask] = useState<ITasks>();
   const router = useRouter();
@@ -17,46 +13,10 @@ const TasksComponent = ({ tasks }: TasksComponentProps) => {
   useEffect(() => {
     setCurrentTask(tasks.find((task) => task.name === category));
   }, [router.asPath]);
-  const [isOpened, setIsOpened] = useState<boolean>(true);
-  const { width } = useWindowSize();
-  useEffect(() => {
-    if (width < 1024) {
-      setIsOpened(false);
-    } else setIsOpened(true);
-  }, [width]);
-  const variants = {
-    opened: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        stiffness: 20,
-      },
-    },
-    closed: {
-      opacity: 0,
-      x: "-100%",
-    },
-  };
+
   return (
     <div className={classes.answers}>
-      <ButtonIcon
-        className={styles.arrow}
-        icon="arrow"
-        onClick={() => setIsOpened(true)}
-      />
-      <motion.div
-        className={styles.mobileMenu}
-        variants={variants}
-        initial={"closed"}
-        animate={isOpened ? "opened" : "closed"}
-      >
-        <SideList answer={currentTask} className={styles.sideBar} />
-        <ButtonIcon
-          className={styles.menuClose}
-          icon="close"
-          onClick={() => setIsOpened(false)}
-        />
-      </motion.div>
+      <SideBar answer={currentTask} className={styles.sideBar} />
       <TaskItem task={currentTask?.items.find((task) => task.id === taskId)} />
     </div>
   );

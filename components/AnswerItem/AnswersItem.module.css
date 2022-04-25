@@ -4,8 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 20px;
   height: 100%;
+
+  padding: 20px;
 }
 
 .title {
@@ -24,12 +25,12 @@
 }
 
 .imgBox {
-  width: clamp(310px, 70%, 600px);
+  width: clamp(310px, 90%, 600px);
 }
 
 .descr {
   color: white;
-
+  margin: 0;
   font-size: calc(0.5em + 1vw);
 }
 
@@ -54,28 +55,26 @@
 }
 
 .iframeBox {
-  width: clamp(310px, 70%, 600px);
+  width: clamp(310px, 90%, 600px);
+  min-height: 350px;
 }
 
 @media screen and (max-width: 700px) {
-  .answer{
+  .answer {
     padding: 10px;
   }
+
   .infoBox {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
 
-
   .imgBox {
     margin-bottom: 10px;
   }
+
   .iframeBox {
     margin-bottom: 10px;
   }
-
-
 }
-
-

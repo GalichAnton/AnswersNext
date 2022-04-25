@@ -28,7 +28,7 @@ const Home: NextPage<HomePageProps> = ({ answers, tasks }) => {
           property="og:image"
           content="https://avatars.mds.yandex.net/i?id=2a0000017a116945f9fc0c138668185665a1-4336923-images-thumbs&n=13"
         />
-        <meta property="og:title" content="AnswerComponent" />
+        <meta property="og:title" content="Answers" />
         <meta property="og:description" content="Interview answer aggregator" />
       </Head>
       <main>

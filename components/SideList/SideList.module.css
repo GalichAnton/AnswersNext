@@ -2,7 +2,7 @@
   align-content: start;
 
   height: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .title {
@@ -23,8 +23,9 @@
 }
 
 .link {
-  transition: opacity 0.7s ease-in-out;
   margin-bottom: 10px;
+
+  transition: opacity 0.7s ease-in-out;
 }
 
 .link :hover {
@@ -34,7 +35,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .list{
+  .list {
     font-size: calc(0.9rem + 1vw);
   }
 }

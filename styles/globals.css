@@ -29,11 +29,14 @@ h2 {
 
 * {
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
+
+  font-family: "Nunito Sans", sans-serif;
 }
-main{
+
+main {
   height: 100%;
 }
+
 ::-webkit-scrollbar {
   width: 20px;
 }

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import classes from "./AnswersItem.module.css";
+import styles from "./AnswersItem.module.css";
 import Image from "next/image";
 import Head from "next/head";
 import { AnswerItemProps } from "./AnswerItemProps";
@@ -15,20 +15,20 @@ const AnswersItem = ({ answer, className, ...props }: AnswerItemProps) => {
         <meta property="og:description" content={answer?.descr} />
         <meta property="og:type" content="article" />
       </Head>
-      <div className={cn(classes.answer, className)} {...props}>
-        <h2 className={classes.title}>{answer?.title}</h2>
-        <div className={classes.infoBox}>
-          <div className={classes.imgBox}>
+      <div className={cn(styles.answer, className)} {...props}>
+        <h2 className={styles.title}>{answer?.title}</h2>
+        <div className={styles.infoBox}>
+          <div className={styles.imgBox}>
             <Image
               width={600}
-              height={450}
-              objectFit={"fill"}
+              height={350}
+              objectFit={"contain"}
               src={`https://res.cloudinary.com/demo/image/fetch/${answer?.image}`}
               alt="pic"
             />
           </div>
           <iframe
-            className={classes.iframeBox}
+            className={styles.iframeBox}
             allowFullScreen
             frameBorder="0"
             title="Youtube player"
@@ -36,13 +36,13 @@ const AnswersItem = ({ answer, className, ...props }: AnswerItemProps) => {
             src={`https://youtube.com/embed/${answer?.video}?autoplay=0`}
           />
         </div>
-        <h3 className={classes.descr}>Краткое описание</h3>
-        <p className={classes.descr}>{answer?.descr}</p>
-        <ul className={classes.links}>
+        <h3 className={styles.descr}>Краткое описание</h3>
+        <p className={styles.descr}>{answer?.descr}</p>
+        <ul className={styles.links}>
           Подробнее &gt;
           {answer?.links.map((link) => (
             <a
-              className={classes.link}
+              className={styles.link}
               key={link.url}
               href={link.url}
               target={"_blank"}
