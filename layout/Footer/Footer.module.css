@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: max(50px, 4vw);
+  padding: 0 20%;
+
+  background: linear-gradient(to right, #3E5151, #DECBA4);
+}
+
+.author {
+  color: white;
+
+  font-size: calc(0.5em + 1vw);
+  font-weight: 500;
+}

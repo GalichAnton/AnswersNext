@@ -1,0 +1,32 @@
+.layout {
+  display: grid;
+
+  min-height: 100vh;
+
+  background: linear-gradient(to right, #BDC3C7, #2C3E50);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.body {
+  align-self: flex-start;
+
+  height: 100%;
+
+  outline: none;
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+
+  align-self: flex-end;
+}

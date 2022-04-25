@@ -1,0 +1,62 @@
+.answers {
+  position: relative;
+
+  display: grid;
+
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "sidebar answer";
+}
+
+.sideBar {
+  grid-area: sidebar;
+
+  border-right: 1px solid #071838FF;
+}
+
+.answer {
+  grid-area: answer;
+}
+
+.answerList {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.categoryTitle {
+  color: white;
+
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.link {
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.activeLink {
+  color: #2C3E50;
+}
+
+
+@media (max-width: 1024px) {
+
+
+  .sideBar {
+    border: none;
+  }
+
+
+}

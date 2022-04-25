@@ -1,0 +1,58 @@
+.arrow {
+  display: none;
+
+  width: 20px;
+  height: 100%;
+
+  border-radius: 0;
+  background: #2C3E50;
+}
+
+.arrow svg {
+  fill: white;
+}
+
+.mobileMenu {
+  height: 100%;
+}
+
+.menuClose {
+  position: fixed;
+  z-index: 11;
+  top: 15px;
+  right: 15px;
+
+  display: none;
+
+  border-radius: 10px;
+  background: transparent;
+}
+
+@media (max-width: 1120px) {
+  .arrow {
+    display: block;
+  }
+
+  .menuClose {
+    display: block;
+  }
+
+  .sideBar {
+    border: none;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    padding: 20px 10px;
+
+    background: rgb(207 208 217 / 94%);
+  }
+}

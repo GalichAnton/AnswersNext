@@ -1,16 +1,72 @@
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+
+  color: inherit;
+}
+
+h2 {
+  margin: 0;
 }
 
 * {
   box-sizing: border-box;
+
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 6px solid transparent;
+  border-radius: 20px;
+  background-color: #D6DEE1;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A8BBBF;
+}
+
+:root {
+  --black: #3B434E;
+  --gray-light: #EBEBEB;
+  --gray: #A4A4A4;
+  --gray-dark: #6C7077;
+  --white: white;
+  --primary: #7351F5;
+  --primary-hover: #6344DF;
+  --red-light: #FEA291;
+  --red: #FC836D;
+  --green: #007B48;
+  --green-light: #C8F8E4;
+  --font-family: "Noto Sans KR", sans-serif;
 }

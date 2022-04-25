@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: max(50px, 4vw);
+  padding: 0 20%;
+
+  background: linear-gradient(to right, #3E5151, #DECBA4);
+}
+
+.title {
+  color: white;
+
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.link {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  opacity: 1;
+  color: white;
+
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .link {
+    font-size: 20px;
+  }
+}
