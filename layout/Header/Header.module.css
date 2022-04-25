@@ -14,7 +14,16 @@
   color: white;
 
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 800;
+  background: -webkit-linear-gradient( #c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.interview{
+  font-family: "Beer money" ,sans-serif;
+  background: -webkit-linear-gradient( #c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .link {

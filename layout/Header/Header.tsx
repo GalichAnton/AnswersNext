@@ -12,6 +12,10 @@ const Header = ({ className, ...props }: HeaderProps) => {
       <Link href={"/"}>
         <a className={styles.link}>На главную</a>
       </Link>
+      <h2 className={styles.title}>
+        Список вопросов к{" "}
+        <span className={styles.interview}>собеседованию</span>{" "}
+      </h2>
       <span className={styles.link} onClick={() => router.back()}>
         Назад
       </span>
