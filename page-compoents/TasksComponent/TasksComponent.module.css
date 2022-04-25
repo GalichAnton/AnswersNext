@@ -50,13 +50,8 @@
   color: #2C3E50;
 }
 
-
 @media (max-width: 1024px) {
-
-
   .sideBar {
     border: none;
   }
-
-
 }

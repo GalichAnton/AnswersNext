@@ -27,6 +27,8 @@
 .category {
   margin: 0 0 10px;
 
+  cursor: pointer;
+
   color: #071838FF;
 
   font-size: calc(0.7em + 1vw);
