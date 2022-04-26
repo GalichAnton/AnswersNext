@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 const Header = ({ className, ...props }: HeaderProps) => {
   const router = useRouter();
-
   return (
     <header className={cn(className, styles.header)} {...props}>
       <Link href={"/"}>
@@ -16,9 +15,6 @@ const Header = ({ className, ...props }: HeaderProps) => {
         Список вопросов к{" "}
         <span className={styles.interview}>собеседованию</span>{" "}
       </h2>
-      <span className={styles.link} onClick={() => router.back()}>
-        Назад
-      </span>
     </header>
   );
 };

@@ -20,7 +20,7 @@ export const jsTasks: ITask[] = [
   {
     id: "3",
     category: "js",
-    title: "Факториала",
+    title: "Факториал",
     descr: "Написать функцию на нахождение факториала числа (рекурсией)",
     video: "rh1mP02NFoM",
     codepenUrl: "https://codepen.io/galichanton/embed/XWVzMYP?default-tab=js",
