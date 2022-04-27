@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { SideBarProps } from "./SideBarProps";
-import styles from "./SideBar.module.css";
-import { ButtonIcon } from "../ButtonIcon/ButtonIcon";
+
 import { motion } from "framer-motion";
-import SideList from "../SideList/SideList";
-import { useWindowSize } from "../../hooks/useWindowSize";
 import { useRouter } from "next/router";
+
+import { useWindowSize } from "../../hooks/useWindowSize";
+import { ButtonIcon } from "../ButtonIcon/ButtonIcon";
+import SideList from "../SideList/SideList";
+import styles from "./SideBar.module.css";
+import { SideBarProps } from "./SideBarProps";
 const SideBar = ({ answer, className }: SideBarProps) => {
   const [isOpened, setIsOpened] = useState<boolean>(true);
   const { width } = useWindowSize();

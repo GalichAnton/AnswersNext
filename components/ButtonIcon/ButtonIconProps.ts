@@ -1,8 +1,9 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
-import up from "./up.svg";
+
+import arrow from "./arrow.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
-import arrow from "./arrow.svg";
+import up from "./up.svg";
 export const icons = {
   up,
   close,

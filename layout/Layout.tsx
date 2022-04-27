@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./Layout.module.css";
-import Header from "./Header/Header";
+
 import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import styles from "./Layout.module.css";
 import { LayoutProps } from "./LayoutProps";
 const Layout = ({ children }: LayoutProps) => {
   return (

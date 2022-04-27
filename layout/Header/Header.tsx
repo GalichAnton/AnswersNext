@@ -1,9 +1,12 @@
 import React from "react";
+
 import cn from "classnames";
-import styles from "./Header.module.css";
-import { HeaderProps } from "./HeaderProps";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
+import styles from "./Header.module.css";
+import { HeaderProps } from "./HeaderProps";
+
 const Header = ({ className, ...props }: HeaderProps) => {
   const router = useRouter();
   return (

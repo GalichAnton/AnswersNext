@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  GetStaticPaths,
-  GetStaticProps,
-  GetStaticPropsContext,
-  NextPage,
-} from "next";
+
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+
+import { Answers } from "../../../data/Answers";
 import { IAnswers } from "../../../interfaces/interfaces";
 import AnswerComponent from "../../../page-compoents/AnswerComponent/AnswerComponent";
-import { ParsedUrlQuery } from "querystring";
-import { Answers } from "../../../data/Answers";
 
 const AnswerPage: NextPage<AnswerPageProps> = ({ answers }) => {
   return (
@@ -38,9 +34,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<AnswerPageProps> = async ({
-  params,
-}: GetStaticPropsContext<ParsedUrlQuery>) => {
+export const getStaticProps: GetStaticProps<AnswerPageProps> = async () => {
   const answers = Answers;
   return {
     props: { answers },

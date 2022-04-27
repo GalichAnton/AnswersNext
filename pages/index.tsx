@@ -1,8 +1,9 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import ContentList from "../page-compoents/ContentList/ContentList";
-import { IAnswers, ITasks } from "../interfaces/interfaces";
+
 import { Answers, Tasks } from "../data/Answers";
+import { IAnswers, ITasks } from "../interfaces/interfaces";
+import ContentList from "../page-compoents/ContentList/ContentList";
 
 const Home: NextPage<HomePageProps> = ({ answers, tasks }) => {
   return (

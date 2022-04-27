@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  GetStaticPaths,
-  GetStaticProps,
-  GetStaticPropsContext,
-  NextPage,
-} from "next";
-import { ITasks } from "../../../interfaces/interfaces";
-import { ParsedUrlQuery } from "querystring";
+
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+
 import { Tasks } from "../../../data/Answers";
+import { ITasks } from "../../../interfaces/interfaces";
 import TasksComponent from "../../../page-compoents/TasksComponent/TasksComponent";
 
 const TaskPage: NextPage<TasksPageProps> = ({ tasks }) => {
@@ -35,9 +31,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<TasksPageProps> = async ({
-  params,
-}: GetStaticPropsContext<ParsedUrlQuery>) => {
+export const getStaticProps: GetStaticProps<TasksPageProps> = async () => {
   return {
     props: { tasks: Tasks },
     revalidate: 60,

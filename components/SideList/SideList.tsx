@@ -1,9 +1,12 @@
-import Link from "next/link";
 import React from "react";
-import { SideListProps } from "./SideListProps";
-import styles from "./SideList.module.css";
+
 import cn from "classnames";
+import Link from "next/link";
 import { useRouter } from "next/router";
+
+import styles from "./SideList.module.css";
+import { SideListProps } from "./SideListProps";
+
 const SideList = ({ answer, className, ...props }: SideListProps) => {
   const router = useRouter();
   return (

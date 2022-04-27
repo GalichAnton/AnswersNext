@@ -1,7 +1,10 @@
 import React from "react";
+
+import cn from "classnames";
+
 import styles from "./Footer.module.css";
 import { FooterProps } from "./FooterProps";
-import cn from "classnames";
+
 const Footer = ({ className, ...props }: FooterProps) => {
   return (
     <footer className={cn(className, styles.footer)} {...props}>

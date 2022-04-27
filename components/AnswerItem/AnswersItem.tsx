@@ -1,8 +1,11 @@
-import React, { useState } from "react";
-import styles from "./AnswersItem.module.css";
-import Head from "next/head";
-import { AnswerItemProps } from "./AnswerItemProps";
+import React from "react";
+
 import cn from "classnames";
+import Head from "next/head";
+
+import { AnswerItemProps } from "./AnswerItemProps";
+import styles from "./AnswersItem.module.css";
+
 const AnswersItem = ({ answer, className, ...props }: AnswerItemProps) => {
   return (
     <>

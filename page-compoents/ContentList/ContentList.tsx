@@ -1,10 +1,12 @@
-import Link from "next/link";
 import React, { useRef, useState } from "react";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+import useOutsideClick from "../../hooks/useOutsideClick";
 import styles from "./ContentList.module.css";
 import { ContentListProps } from "./ContentListProps";
-import { motion } from "framer-motion";
-import useOutsideClick from "../../hooks/useOutsideClick";
-import { translateAxis } from "framer-motion/types/projection/geometry/delta-apply";
+
 const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
   const newAnswers = [
     ...answers.map((answer) => ({ ...answer, isOpen: false })),
@@ -74,6 +76,7 @@ const ContentList = ({ answers, tasks, ...props }: ContentListProps) => {
                   className={styles.links}
                 >
                   <Link
+                    prefetch={false}
                     href={
                       category.name.includes("task")
                         ? `/tasks/${category.name}/${answer.id}`

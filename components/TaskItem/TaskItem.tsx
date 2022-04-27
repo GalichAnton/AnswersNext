@@ -1,7 +1,9 @@
 import React, { FC } from "react";
-import { ITask, Category } from "../../interfaces/interfaces";
-import styles from "../AnswerItem/AnswersItem.module.css";
+
 import Head from "next/head";
+
+import { ITask } from "../../interfaces/interfaces";
+import styles from "../AnswerItem/AnswersItem.module.css";
 interface QuestionItemProps {
   task?: ITask;
 }
