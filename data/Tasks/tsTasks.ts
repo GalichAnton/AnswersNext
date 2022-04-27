@@ -5,7 +5,7 @@ export const tsTasks: ITask[] = [
     id: "1",
     category: "ts",
     title: "Custom array methods",
-    descr: "Написать свою реелизацию основных методов массивов(с типизацией)",
+    descr: "Написать свою реализацию основных методов массивов(с типизацией)",
     video: "ugtnxm18M8o",
     codepenUrl:
       "https://codesandbox.io/embed/custom-array-methods-ts-3hkbmp?fontsize=14&hidenavigation=1&theme=dark",
