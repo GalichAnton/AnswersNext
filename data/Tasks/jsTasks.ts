@@ -278,4 +278,21 @@ export const jsTasks: ITask[] = [
     video: "x-EZy6gu_38",
     codepenUrl: "https://codepen.io/galichanton/embed/RwxyZQy?default-tab=js",
   },
+  {
+    id: "33",
+    category: "js",
+    title: "Richest Customer Wealth",
+    descr:
+      "You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the customer has in the  bank. Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.",
+    video: "-rUxM9h7smc",
+    codepenUrl: "https://codepen.io/galichanton/embed/yLvLJRV?default-tab=js",
+  },
+  {
+    id: "34",
+    category: "js",
+    title: "Plane tickets",
+    descr: "Составить историю полетов по имеющимся билетам",
+    video: "VeWtYEX8NfU",
+    codepenUrl: "https://codepen.io/galichanton/embed/OJQVdNM?default-tab=js",
+  },
 ];
