@@ -1,9 +1,9 @@
 .layout {
   display: grid;
 
-  min-height: 100vh;
+  height: 100vh;
 
-  background: linear-gradient(to right, #BDC3C7, #2C3E50);
+
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -18,8 +18,7 @@
 
 .body {
   align-self: flex-start;
-
-  height: 100%;
+  background: linear-gradient(to right, #BDC3C7, #2C3E50);
 
   outline: none;
   grid-area: body;
