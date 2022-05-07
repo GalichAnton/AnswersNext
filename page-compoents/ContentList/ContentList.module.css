@@ -1,3 +1,6 @@
+.contentList{
+  height: 100%;
+}
 .wrapper {
   position: relative;
 
@@ -6,7 +9,6 @@
   align-items: center;
 
   width: clamp(300px, 70%, 900px);
-  height: 100%;
   margin: 0 auto;
   padding: 0;
 

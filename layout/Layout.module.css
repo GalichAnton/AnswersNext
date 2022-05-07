@@ -3,7 +3,6 @@
 
   height: 100vh;
 
-
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -18,9 +17,9 @@
 
 .body {
   align-self: flex-start;
-  background: linear-gradient(to right, #BDC3C7, #2C3E50);
-
+height: 100%;
   outline: none;
+  background: linear-gradient(to right, #BDC3C7, #2C3E50);
   grid-area: body;
 }
 

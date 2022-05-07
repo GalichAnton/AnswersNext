@@ -1,10 +1,10 @@
 .sideList {
+  overflow-y: auto;
   align-content: start;
 
   height: 100%;
+  max-height: 100vh;
   padding: 10px;
- max-height: 100vh;
-  overflow-y: auto;
 }
 
 .title {
@@ -22,7 +22,6 @@
   color: #071838FF;
 
   font-size: 1rem;
-
 }
 
 .link {
