@@ -35,7 +35,7 @@ const TaskItem: FC<QuestionItemProps> = ({ task }) => {
             className={styles.iframeBox}
             scrolling="no"
             title={task?.title}
-            src={task?.codepenUrl}
+            src={task?.sandboxUrl}
             frameBorder="no"
             loading="lazy"
             allowFullScreen={true}

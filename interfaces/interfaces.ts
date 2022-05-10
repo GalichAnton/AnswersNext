@@ -16,7 +16,7 @@ export interface IAnswer {
 }
 
 export interface ITask extends Omit<IAnswer, "links" | "image"> {
-  codepenUrl: string;
+  sandboxUrl: string;
 }
 
 export interface IAnswers {
