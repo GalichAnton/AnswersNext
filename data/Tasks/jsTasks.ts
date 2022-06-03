@@ -337,4 +337,13 @@ export const jsTasks: ITask[] = [
     sandboxUrl:
       "https://codesandbox.io/embed/coder-decoder-5f1cdr?fontsize=14&hidenavigation=1&theme=dark&view=editor",
   },
+  {
+    id: "36",
+    category: "js",
+    title: "Дан массив с датами.",
+    descr: "Необходимо написать функцию, которая вернёт объект вида",
+    video: "VeWtYEX8NfU",
+    sandboxUrl:
+      "https://codesandbox.io/embed/dan-massiv-s-datami-seo5w8?fontsize=14&hidenavigation=1&theme=dark&view=editor",
+  },
 ];
