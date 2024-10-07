@@ -12,6 +12,7 @@
     "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.11.7",
     "classnames": "^2.3.1",
     "eslint-config-prettier": "^8.5.0",
     "framer-motion": "^6.3.1",
